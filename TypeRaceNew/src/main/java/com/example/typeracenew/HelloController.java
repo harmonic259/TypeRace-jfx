@@ -42,14 +42,14 @@ public class HelloController
     {
         try
         {
-            File myObj = new File("C:\\Users\\ASUS-pc Ishragh\\Documents\\GitHub\\TypeRace-jfx\\TypeRaceNew\\src\\main\\java\\com\\example\\typeracenew\\textFile");
+            File myObj = new File("fileName");
             Scanner myReader = new Scanner(myObj);
             while (myReader.hasNextLine())
             {
                 String data = myReader.nextLine();
                 welcomeText.setText(data);
                 onSpaceKey(data);
-                
+
             }
 
 
